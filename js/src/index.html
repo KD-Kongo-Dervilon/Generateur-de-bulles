@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Entrainement js </title>
+    <link rel="stylesheet" href="css/main.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="clikEvent box">
+        <h4> Ou est née Nelson Mandela </h4>
+        <button id="btn-1">Afrique du Sud</button>
+        <button id="btn-2"> Afrique du Nord</button>
+        <p> La bonne réponse est Afrique du sud  </p>
+    </div>
+
+    <div class="mousemove"></div>
+
+    <div class="keypress box">
+        <h2> Vous appuyez sur la touche :<span id="key"></span></h2>
+    </div>
+
+    <div class="box">
+        <figure>
+            <figcaption> Ecoute savage de jason derulo </figcaption>
+            <audio controls src="song.mp3" type="mp3">
+                <p>Votre navigateur ne prend pas en charge l'audio HTML. Voici un
+                    un <a href="song.mp3">lien vers le fichier audio</a> pour le
+                    télécharger.
+                </p>
+            </audio>
+        </figure>
+    </div>
+
+    <nav role="navigation">
+        <ul>
+            <li class="item"><a aria-current="page" href="">accueil</a></li>
+            <li class="item"><a href="">service </a></li>
+            <li class="item"><a href="">projets</a></li>
+            <li class="item"><a href="">portfolio</a></li>
+            <li class="item"><a href="">contact</a></li>
+        </ul>
+    </nav>
+
+    <form class="box" action="" method="post">
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Entrez votre nom" >
+
+        <select>
+            <option value="">--selectionner votre langage favoris--</option>
+            <option value="Javascript">javascript</option>
+            <option value="python">python</option>
+            <option value="Java">Java</option>
+        </select>
+
+        <label for="cgv"> Accepter vous les conditions génerales</label>
+        <input type ="checkbox" id="cgv">
+
+        <input type="submit" value="Valider">
+        <div></div>
+    </form>
+
+    <div class="containerBox">
+        <div class="box-1"></div>
+        <div class="box-2"></div>
+    </div>
+
+    <!-----Caculatrice--->
+    <div class="app">
+        <h5 id="resultat"></h5>
+        <button class="btn" id="9">9</button>
+        <button class="btn" id="8">8</button>
+        <button class="btn" id="7">7</button>
+        <button class="btn" id="6">6</button>
+        <button class="btn" id="5">5</button>
+        <button class="btn" id="4">4</button>
+        <button class="btn" id="3">3</button>
+        <button class="btn" id="2">2</button>
+        <button class="btn" id="1">1</button>
+        <button class="btn" id="0">0</button>
+        <button class="btn" id=".">.</button>
+        <button class="btn" id="+">+</button>
+        <button  id="equal">=</button>
+        <button class="btn" id="-">-</button>
+        <button class="btn" id="*">*</button>
+        <button class="btn" id="/">/</button>
+        <button class="btn" id="clear">C</button>
+    </div>
+
+
+
+<script src="js/main.js"></script>
+</body>
+</html>

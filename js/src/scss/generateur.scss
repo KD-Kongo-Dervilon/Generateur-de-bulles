@@ -1,0 +1,61 @@
+@import './libs/reset';
+@import './libs/variables';
+
+*,::after ,::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    background: $Background_body;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+    cursor: crosshair;
+}
+
+.buble {
+    position: absolute;
+    border-radius: 300px;
+    background: rgba(255, 166, 0, 0.6);
+    opacity: 0;
+    animation: anim 8s forwards;
+    filter: hue-rotate(0deg);
+}
+
+@keyframes anim {
+    to {
+        top: -250px;
+        left: var(--left);
+        opacity: 1;
+        filter: hue-rotate(720deg);
+    }
+}
+
+.affiche {
+    width: 20%;
+    height: 10vh;
+    background: violet;
+    margin: 50px auto;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h2 {
+        font-size: clamp(2rem, 3vw , 5rem);
+    }
+}
